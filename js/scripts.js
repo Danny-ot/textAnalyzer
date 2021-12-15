@@ -1,7 +1,11 @@
 function wordCount(text){
    const textArray = text.split(" ");
-   const wordCount = 0;
+   let wordCount = 0;
+   if(text.length === 0 ){
+       return wordCount;
+   }
    textArray.forEach(element => {
-       wordCount ++ ;
+       wordCount ++;
    });
+   return wordCount;
 }
