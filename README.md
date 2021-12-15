@@ -26,6 +26,12 @@ Expected Output : 0;
 
 Test : It should return 0 is the user inputs just spaces
 code:
-const text = "              ";
+const text = "          ";
 wordCount(text);
 Expected Output : 0;
+
+Test : It should not count number as a string
+code:
+const text = "You are 22 yrs old"
+wordCount(text);
+Expected Output : 4;

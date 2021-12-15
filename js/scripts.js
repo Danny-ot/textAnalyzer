@@ -5,7 +5,10 @@ function wordCount(text){
        return wordCount;
    }
    textArray.forEach(element => {
-       wordCount ++;
+       if(!Number(element)){
+           wordCount ++;
+       }
+       
    });
    return wordCount;
 }
