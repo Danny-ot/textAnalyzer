@@ -5,3 +5,7 @@ code:
 const text = "hello";
 Expected Output: 1
 
+Test : It should return 2 for two words
+code:
+const text = "hello there";
+Expected Output: 2;
