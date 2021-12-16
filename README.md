@@ -45,3 +45,9 @@ code :
 const word : "Hello"
 sentenceCount(word);
 Expected Output : 1;
+
+Test : It should return 1 for an inputted sentence
+code : 
+const sentence : "Danny is the best";
+sentenceCount(sentence);
+Expected output : 1
