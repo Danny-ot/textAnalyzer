@@ -54,6 +54,12 @@ Expected output : 1;
 
 Test : It should be able to return the number of sentences inputted 
 code :
-const sentence : "Danny is the best.He is handsome";
+const sentence : "Danny is the best. He is handsome";
 sentenceCount(sentence);
 Expected Output : 2
+
+Test : It should return 0 for an empty string
+code : 
+const sentence : "";
+sentenceCount(sentence);
+Expected Output : 0
