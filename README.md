@@ -35,3 +35,13 @@ code:
 const text = "You are 22 yrs old"
 wordCount(text);
 Expected Output : 4;
+
+
+
+Describe: sentenceCount()
+
+Test : It should be able to return 1 for a word 
+code :
+const word : "Hello"
+sentenceCount(word);
+Expected Output : 1;

@@ -12,3 +12,7 @@ function wordCount(text){
    });
    return wordCount;
 }
+
+function sentenceCount(sentence){
+    return 1 ;
+}
