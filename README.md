@@ -50,4 +50,10 @@ Test : It should return 1 for an inputted sentence
 code : 
 const sentence : "Danny is the best";
 sentenceCount(sentence);
-Expected output : 1
+Expected output : 1;
+
+Test : It should be able to return the number of sentences inputted 
+code :
+const sentence : "Danny is the best.He is handsome";
+sentenceCount(sentence);
+Expected Output : 2

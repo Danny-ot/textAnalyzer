@@ -14,5 +14,10 @@ function wordCount(text){
 }
 
 function sentenceCount(sentence){
-    return 1 ;
+    const sentenceArray = sentence.split(".");
+    let sentenceCount = 0;
+    sentenceArray.forEach(function(element){
+        sentenceCount ++ ;
+    })
+    return sentenceCount;
 }
