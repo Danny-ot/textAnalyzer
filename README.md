@@ -107,3 +107,10 @@ const text = "red red red blue red";
 const word = "red";
 noOfWordOccurences(text , word);
 Expected Output = 4;
+
+Test : It should return the number of occurences regardless of the case
+code :
+const text = "red red red! blue red";
+const word = "red";
+noOfWordOccurences(text , word);
+Expected Output = 4;

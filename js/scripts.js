@@ -42,7 +42,7 @@ function noOfWordOccurences(word , text){
     let wordCount = 0;
     const textArray = text.split(" ");
     textArray.forEach(function(element){
-        if(word === element){
+        if(word.toLowerCase() === element.toLowerCase()){
         wordCount++
     }
     })
