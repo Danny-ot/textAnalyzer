@@ -110,7 +110,14 @@ Expected Output = 4;
 
 Test : It should return the number of occurences regardless of the case
 code :
-const text = "red red red! blue red";
-const word = "red";
+const text = "red Red red blue red";
+const word = "RED";
+noOfWordOccurences(text , word);
+Expected Output = 4;
+
+Test : It should return the number of occurences regardless of the punctuation
+code :
+const text = "red Red red! blue red";
+const word = "RED";
 noOfWordOccurences(text , word);
 Expected Output = 4;
