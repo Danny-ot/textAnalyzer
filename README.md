@@ -100,3 +100,10 @@ const text = "red";
 const word = "blue";
 noOfWordOccurences(text , word);
 Expected Output = 0;
+
+Test : It should return the number of occurences of a word in a text
+code :
+const text = "red red red blue red";
+const word = "red";
+noOfWordOccurences(text , word);
+Expected Output = 4;

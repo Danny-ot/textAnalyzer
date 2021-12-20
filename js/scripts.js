@@ -40,8 +40,12 @@ function noOfWordOccurences(word , text){
         return 0 ;
     }
     let wordCount = 0;
-    if(word === text){
+    const textArray = text.split(" ");
+    textArray.forEach(function(element){
+        if(word === element){
         wordCount++
     }
+    })
+    
     return wordCount;
 }
