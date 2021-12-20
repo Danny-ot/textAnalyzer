@@ -63,3 +63,20 @@ code :
 const sentence : "";
 sentenceCount(sentence);
 Expected Output : 0
+
+Test : It should return 0 if only spaces are inputted
+code :
+const sentence = "      " ;
+sentenceCount(sentence);
+Expected Output = 0;
+
+
+Describe : noOfWordOccurences()
+
+Test : It should return 0 for an empty string in the text
+code :
+const text = "";
+const word = "red";
+noOfWordOccurences(text , word);
+Expected Output = 0;
+

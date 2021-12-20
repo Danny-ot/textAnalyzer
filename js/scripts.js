@@ -1,26 +1,38 @@
-function wordCount(text){
-   const textArray = text.split(" ");
-   let wordCount = 0;
-   if(text.trim().length === 0 ){
-       return wordCount;
-   }
-   textArray.forEach(element => {
-       if(!Number(element)){
-           wordCount ++;
-       }
-       
-   });
-   return wordCount;
+//Utility Logic 
+function noSpacesAndWord(text, word){
+    return ((text.trim().length === 0) || (word.trim().length === 0) );
 }
 
-function sentenceCount(sentence){
+//Business Logic
+function wordCount(text) {
+    if(noSpacesAndWord(text)){
+        return 0 ;
+    };
+    const textArray = text.split(" ");
+    let wordCount = 0;
+    textArray.forEach(element => {
+        if (!Number(element)) {
+            wordCount++;
+        }
+
+    });
+    return wordCount;
+}
+
+function sentenceCount(sentence) {
     let sentenceCount = 0;
-    if(sentence.length === 0 ){
-        return sentenceCount;
+    if (noSpacesAndWord(sentence)) {
+        return 0;
     }
     const sentenceArray = sentence.split(".");
-    sentenceArray.forEach(function(element){
-        sentenceCount ++ ;
+    sentenceArray.forEach(function (element) {
+        sentenceCount++;
     })
     return sentenceCount;
+}
+
+function noOfWordOccurences(word , text){
+    if(noSpacesAndWord(text , word)){
+        return 0 ;
+    }
 }
