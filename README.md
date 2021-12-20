@@ -86,3 +86,11 @@ const text = "red boy red";
 const word = "";
 noOfWordOccurences(text , word);
 Expected Output = 0;
+
+Test : It should return 1 occurence if the word and the text are the same
+code :
+const text = "red";
+const word = "red";
+noOfWordOccurences(text , word);
+Expected Output = 1;
+

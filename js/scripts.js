@@ -39,4 +39,9 @@ function noOfWordOccurences(word , text){
     if(noSpacesAndWordAndText(text , word)){
         return 0 ;
     }
+    let wordCount = 0;
+    if(word === text){
+        wordCount++
+    }
+    return wordCount;
 }
