@@ -80,3 +80,9 @@ const word = "red";
 noOfWordOccurences(text , word);
 Expected Output = 0;
 
+Test : It should return 0 for an empty string in word
+code :
+const text = "red boy red";
+const word = "";
+noOfWordOccurences(text , word);
+Expected Output = 0;

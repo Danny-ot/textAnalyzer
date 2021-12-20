@@ -1,6 +1,10 @@
 //Utility Logic 
-function noSpacesAndWord(text, word){
+function noSpacesAndWordAndText(text, word){
     return ((text.trim().length === 0) || (word.trim().length === 0) );
+}
+
+function noSpacesAndWord(text){
+    return (text.trim().length === 0 )
 }
 
 //Business Logic
@@ -32,7 +36,7 @@ function sentenceCount(sentence) {
 }
 
 function noOfWordOccurences(word , text){
-    if(noSpacesAndWord(text , word)){
+    if(noSpacesAndWordAndText(text , word)){
         return 0 ;
     }
 }
