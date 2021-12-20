@@ -94,3 +94,9 @@ const word = "red";
 noOfWordOccurences(text , word);
 Expected Output = 1;
 
+Test : It should return 0 occurence if the text and word are different
+code : 
+const text = "red";
+const word = "blue";
+noOfWordOccurences(text , word);
+Expected Output = 0;
