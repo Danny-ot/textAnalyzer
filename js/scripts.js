@@ -54,5 +54,11 @@ function threeMostCommonWords(text){
     if(noSpacesAndText(text)){
         return 0 ;
     }
+    const textArray = text.split(" ");
+    let wordCount = 0;
+    textArray.forEach(function(element){
+        wordCount ++;
+    })
+    return wordCount;
 }
 

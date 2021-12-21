@@ -130,3 +130,10 @@ code :
 const text : "  ";
 threeMostCommonWords(text);
 Expected Output = 0;
+
+Test : It should be able to return the number of words in a text
+code :
+const text = "danny is a handsome guy";
+threeMostCommonWords(text);
+Expected Output = 5;
+
