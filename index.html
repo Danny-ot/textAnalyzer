@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +10,37 @@
     <script src="js/jquery.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/UIL.js"></script>
+    <style type="text/css">
+        h1 {
+            font-weight: bold;
+        }
+    </style>
     <title>Text Analyzer</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <h1 class="text-success text-center">Text Analyzer</h1>
+        <form id="form">
+            <div class="form-group">
+                <label for="sentence">Input a text passage to get a total word count:</label>
+                <textarea class="form-control" id="text-passage"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="word">Optionally input a word to get the number of occurences in the passage</label>
+                <input type="text" class="form-control" id="word">
+            </div>
+            <button type="submit" class="btn btn-success btn-lg">Analyze</button>
+        </form>
+        <div class="ans-block">
+            <p class="mt-3">No of words: <span id="text-words"></span></p>
+            <p>No of sentences: <span id="text-sentences"></span></p>
+            <p>The word <b><span class="word"></span></b> appears <b><span id="word-times"></span></b>
+                times</p>
+        </div>
+
+    </div>
+
 </body>
+
 </html>

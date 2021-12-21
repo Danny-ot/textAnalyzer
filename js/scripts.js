@@ -1,16 +1,16 @@
 //Utility Logic 
-function noSpacesAndWordAndText(text, word){
-    return ((text.trim().length === 0) || (word.trim().length === 0) );
+function noSpacesAndWordAndText(text, word) {
+    return ((text.trim().length === 0) || (word.trim().length === 0));
 }
 
-function noSpacesAndWord(text){
-    return (text.trim().length === 0 )
+function noSpacesAndWord(text) {
+    return (text.trim().length === 0)
 }
 
 //Business Logic
 function wordCount(text) {
-    if(noSpacesAndWord(text)){
-        return 0 ;
+    if (noSpacesAndWord(text)) {
+        return 0;
     };
     const textArray = text.split(" ");
     let wordCount = 0;
@@ -35,17 +35,18 @@ function sentenceCount(sentence) {
     return sentenceCount;
 }
 
-function noOfWordOccurences(word , text){
-    if(noSpacesAndWordAndText(text , word)){
-        return 0 ;
+function noOfWordOccurences(word, text) {
+    if (noSpacesAndWordAndText(text, word)) {
+        return 0;
     }
     let wordCount = 0;
     const textArray = text.split(" ");
-    textArray.forEach(function(element){
-        if(element.toLowerCase().includes(word.toLowerCase())){
-        wordCount++
-    }
+    textArray.forEach(function (element) {
+        if (element.toLowerCase().includes(word.toLowerCase())) {
+            wordCount++
+        }
     })
-    
+
     return wordCount;
 }
+
