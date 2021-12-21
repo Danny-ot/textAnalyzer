@@ -121,3 +121,12 @@ const text = "red Red red! blue red";
 const word = "RED";
 noOfWordOccurences(text , word);
 Expected Output = 4;
+
+
+Describe : threeMostCommonWords()
+
+Test : It should return zero if there are no words inputted or if there are only spaces inputted.
+code :
+const text : "  ";
+threeMostCommonWords(text);
+Expected Output = 0;

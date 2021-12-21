@@ -3,13 +3,13 @@ function noSpacesAndWordAndText(text, word) {
     return ((text.trim().length === 0) || (word.trim().length === 0));
 }
 
-function noSpacesAndWord(text) {
+function noSpacesAndText(text) {
     return (text.trim().length === 0)
 }
 
 //Business Logic
 function wordCount(text) {
-    if (noSpacesAndWord(text)) {
+    if (noSpacesAndText(text)) {
         return 0;
     };
     const textArray = text.split(" ");
@@ -25,7 +25,7 @@ function wordCount(text) {
 
 function sentenceCount(sentence) {
     let sentenceCount = 0;
-    if (noSpacesAndWord(sentence)) {
+    if (noSpacesAndText(sentence)) {
         return 0;
     }
     const sentenceArray = sentence.split(".");
@@ -48,5 +48,11 @@ function noOfWordOccurences(word, text) {
     })
 
     return wordCount;
+}
+
+function threeMostCommonWords(text){
+    if(noSpacesAndText(text)){
+        return 0 ;
+    }
 }
 
