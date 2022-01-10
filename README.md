@@ -1,3 +1,40 @@
+ # Application Details
+### Application Author: [
+    Name : Oladeji Daniel
+    Github: Danny-ot
+    PhoneNumber: 09021241205
+    Email: oladejidaniel456@gmail.com
+]
+
+### Application Technology: [
+    HTML
+    CSS
+    JAVASCRIPTS
+    GIT
+    Github
+]
+
+### Application Description
+*This an application about text analyzing*
+
+### Application Git Branches: [
+    main(default branch)
+]
+
+### Application challenges : 
+1. I had challenges when i was writing the function for the wordCount
+2. I had challenges when i was creating the function for three most Commom Words
+3. I had challenges when i was debugging my code
+4. I had challenges when i was creating my user interface
+
+### Application Github  Information : [
+    Repository Name : textAnalyzer
+    Remote URL : git remote add origin https://github.com/Danny-ot/textAnalyzer.git
+]
+
+
+
+
 Describe: wordCount()
 
 Test : It should return 1 for just 1 word
@@ -136,4 +173,39 @@ code :
 const text = "danny is a handsome guy";
 threeMostCommonWords(text);
 Expected Output = 5;
+
+Test : It should be able to return the most commom word in the sentence
+code :
+const text = "red red red boy";
+threeMostCommonWords(text);
+Expected Output = red;
+
+Test : It should be able to return the most commom word in the sentence with the number of occurences
+code :
+const text = "red red red boy";
+threeMostCommonWords(text);
+Expected Output = red : 3;
+
+Describe: boldPassage()
+
+Test: "It should return a non-matching word in a p tag."
+Code:
+const word = "hello";
+const text = "yo";
+boldPassage(word, text);
+Expected Output: "<p>yo</p>"
+
+Test: "It should return a matching word in a b tag."
+Code:
+const word = "hello";
+const text = "hello";
+boldPassage(word, text);
+Expected Output: "<p><b>hello</b></p>"
+
+Test: "It should wrap words that match in `b` tags but not words that don't."
+Code:
+const word = "hello";
+const text = "hello there";
+boldPassage(word, text);
+Expected Output: "<p><b>hello</b> there</p>"
 

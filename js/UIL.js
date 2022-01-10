@@ -9,7 +9,8 @@ $(document).ready(function(){
         $("#text-sentences").text(sentenceCount(textPassage))
         $(".word").text(word);
         $("#word-times").text(noOfWordOccurences(word , textPassage))
-
+        $("#bold-pass").html(boldedWordsPassage(word , textPassage))
+        $("#threeMostCommon").html(threemostCommon(textPassage))
         $(".ans-block").show();
     })
 })

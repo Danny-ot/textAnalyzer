@@ -50,15 +50,36 @@ function noOfWordOccurences(word, text) {
     return wordCount;
 }
 
-function threeMostCommonWords(text){
-    if(noSpacesAndText(text)){
-        return 0 ;
-    }
-    const textArray = text.split(" ");
-    let wordCount = 0;
-    textArray.forEach(function(element){
-        wordCount ++;
+function threemostCommon(str) {
+    let stringArray = str.split(" ");
+    let result = "<p>";
+
+    stringArray.forEach(function (element) {
+
+        result += element.concat(":" + " " + noOfWordOccurences(element, str)) + "<br>";
+
     })
-    return wordCount;
+    return result + "</p>"
+};
+
+
+function boldedWordsPassage(word, text) {
+    if (noSpacesAndWordAndText(word, text)) {
+        return "";
+    }
+    let textPassage = "<p>";
+    const textArray = text.split(" ");
+    textArray.forEach(function (element, index) {
+        if (element.toLowerCase().includes(word.toLowerCase())) {
+            textPassage = textPassage.concat("<b>" + element + "</b>");
+        } else {
+            textPassage = textPassage.concat(element)
+        }
+        if (index !== (textArray.length - 1)) {
+            textPassage = textPassage.concat(" ")
+        }
+
+    })
+    return textPassage + "</p>"
 }
 
